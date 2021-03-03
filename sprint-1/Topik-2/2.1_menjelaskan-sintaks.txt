@@ -1,0 +1,44 @@
+menjelaskan sintaks yang berstyle bold
+
+SOAL 1 
+
+var_dump($d + $e) 
+	yang dihasilkan adalah string yang berisi 32, hal tersebut terjadi 
+dikarenakan php mendetek tanda + bukan sebagai aritmatika melainkan sebagai 
+penggabungan string, jadi ketika bertemu $e yang bernilai string 2, maka hasilnya
+akan bernilai string 32
+var_dump($e == $f)
+	menghasilkan boolean true, karena perbandingan persamaannya tidak sampai
+mendetail atau tidak sampai menyamakan apakah type datanya sama atau tidak, karena $f(2)
+sama saja seperti string dari $e('2')
+var_dump($e === $f)
+	menghasilkan boolean false, karena perbandingannya sampai mendetail. PHP 
+akan mengecek apakah type datanya sama atau tidak
+var_dump($g)
+	menghasilkan null / kosong, hal tersebut terjadi karena kita mengisikannya
+sebagai null/ kosong
+var_dump((bool)$g)
+	menghasilkan bool false, setelah kita membuatnya bertype data boolean
+maka akan menghasilkan false, karena nilai $g adalah kosong / 0 sehingga menghasilkan
+boolean false 
+var_dump((int)$g)
+	menghasilkan 0, setelah kita mengubah type datanya menjadi integer, yang 
+sebelumnya kita isikan $g bernilai null atau yang berarti kosong, maka ketika 
+diubah ke integer akan menghasilkan output 0
+
+
+SOAL 2
+
+var_dump(true && false)
+	menghasilkan boolean false, karena && jika salah satunya salah atau  
+bernilai false maka kode tidak akan dijalankan yang berarti seluruhnya akan 
+menjadi false
+var_dump(true || false)
+	menghasilkan boolean true, karena || jika salah satunya benar atau
+bernila true, maka keseluruhannya akan bernilai true
+var_dump(false || false)
+	menghasilkan boolean false, karena keduanya bernilai false
+var_dump(!false)
+	menghasilkan boolean true, karena tanda ! berarti bukan sehingga yang
+tadinya berisi false, ketika kita masukkan tanda ! akan menjadi bukan false
+yang berarti true

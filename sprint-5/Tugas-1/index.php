@@ -1,0 +1,125 @@
+<?php
+include('functions.php');
+use functions\Lingkaran;
+use functions\Segitiga;
+use functions\Persegi;
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung bangun datar</title>
+    <style>
+    #left-side {
+        float: left;
+        width: 50%;
+        height: 500px;
+    }
+    #right-side {
+        float: right;
+        width: 50%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #right-side h2 {
+        text-align: center;
+        font-size: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div id="left-side">
+        <h1>Menghitung luas bangun datar</h1>
+        <form action="" method="post">
+        <div class="operasi">
+            <ul>
+                <li>
+                    <label for="angka1-1">Angka 1: </label>
+                    <input type="number" name="ruas" id="angka1-1">
+                </li>
+                <li>
+                    <input type="submit" name="keliling_lingkaran" class="submit" value="keliling">
+                    <input type="submit" name="luas_lingkaran" class="submit" value="luas">
+                </li>
+            </ul>
+        </div>
+        <div class="operasi">
+            <ul>
+                <li>
+                    <label for="angka2-1">Alas : </label>
+                    <input type="number" name="alas" id="angka2-1">
+                </li>
+                <li>
+                    <label for="angka2-2">Tinggi : </label>
+                    <input type="number" name="tinggi" id="angka2-2">
+                </li>
+                <li>
+                    <label for="angka2-3">Sisi 1 : </label>
+                    <input type="number" name="sisi1" id="angka2-3">
+                </li>
+                <li>
+                    <label for="angka2-3">Sisi 2 : </label>
+                    <input type="number" name="sisi2" id="angka2-3">
+                </li>
+                <li>
+                    <input type="submit" name="keliling_segitiga" class="submit" value="keliling">
+                    <input type="submit" name="luas_segitiga" class="submit" value="luas">
+                </li>
+            </ul>
+        </div>
+        <div class="operasi">
+            <ul>
+                <li>
+                    <label for="angka3-1">Angka 1: </label>
+                    <input type="number" name="panjang" id="angka3-1">
+                </li>
+                <li>
+                    <label for="angka3-2">Angka 2: </label>
+                    <input type="number" name="lebar" id="angka3-2">
+                </li>
+                <li>
+                    <input type="submit" name="keliling_persegi" class="submit" value="keliling">
+                    <input type="submit" name="luas_persegi" class="submit" value="luas">
+                </li>
+            </ul>
+        </div>
+        </form>
+    </div>
+    <div id="right-side">
+        <h2><?php
+            if (isset($_POST['keliling_lingkaran']))
+            {
+                $call = Lingkaran::lingkaran($_POST['ruas']);
+                echo $call;
+            } elseif (isset($_POST['luas_lingkaran']))
+            {
+                $call = Lingkaran::lingkaran($_POST['ruas']);
+                echo $call;
+            } elseif (isset($_POST['keliling_segitiga']))
+            {
+                $call = Segitiga::segitiga($_POST['alas'], $_POST['tinggi'], $_POST['sisi1'], $_POST['sisi2']);
+                echo $call;
+            } elseif (isset($_POST['luas_segitiga']))
+            {
+                $call = Segitiga::segitiga($_POST['alas'], $_POST['tinggi'], $_POST['sisi1'], $_POST['sisi2']);
+                echo $call;
+            } elseif (isset($_POST['keliling_persegi']))
+            {
+                $call = Persegi::persegi($_POST['panjang'], $_POST['lebar']);
+                echo $call;
+            } elseif (isset($_POST['luas_persegi']))
+            {
+                $call = Persegi::persegi($_POST['panjang'], $_POST['lebar']);
+                echo $call;
+            }
+            ?>
+        </h2>
+    </div>
+</body>
+</html>

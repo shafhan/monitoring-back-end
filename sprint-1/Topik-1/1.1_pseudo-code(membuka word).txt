@@ -1,0 +1,13 @@
+SET komputer = hidup
+SET apk_word = ada di desktop
+
+JIKA komputer = hidup MAKA
+	JIKA apk_word = ada di desktop 
+	Klik aplikasnya lalu mulai mengetik
+	AKHIR-JIKA
+KETIKA !komputer MAKA
+Pastikan seluruh kabel sudah pada tempatnya dan colokan untuk menyalakan komputernya sudah tercolok, lalu nyalakan komputernya
+	JIKA !apk_word MAKA
+	Cari dipencarian lalu ketik word, setelah menemukan aplikasinya, klik aplikasi tersebut, 		kemudian mulailah menulis
+	AKHIR-JIKA
+AKHIR-KETIKA

@@ -1,0 +1,13 @@
+Apa pengertian dari 1NF, 2NF, dan 3NF dalam menormalisasi database?
+
+=>1NF
+    Pada tahap ini akan dilakukan pemecahan terhadap nilai dalam table, sehingga setiap data hanya memiliki 1 nilai saja,
+dan tidak diperbolehkan grouping atau pada salah satu nilai kolom bernilai 1 namun di kolom lain diberikan semua nilai yang 
+berkaitan dengan data yang bernilai 1 itu.
+
+=>2NF
+    Sedangkan ditahap ini, pemecahan akan dilakukan berdasarkan kategori.
+
+=>3NF 
+    Pada tahap ini akan yang akan dipisah lagi adalah field yang memiliki nilai yang tidak berkaitan dengan primary key,
+namun berkaitan dengan field lain.

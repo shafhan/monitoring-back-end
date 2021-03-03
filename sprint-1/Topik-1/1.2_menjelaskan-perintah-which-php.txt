@@ -1,0 +1,3 @@
+perintah which php digunakan untuk memberikan lokasi file php tersebut berada dimana
+dari perintah tersebut maka terminal menjawab /usr/bin/php 
+yang berarti file phpnya berada di /usr/bin/php
