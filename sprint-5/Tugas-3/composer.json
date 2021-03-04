@@ -1,0 +1,16 @@
+{
+    "name": "safuh/tugas-3",
+    "description": "using composer for autoload",
+    "authors": [
+        {
+            "name": "shafhan",
+            "email": "shafhan.fa@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Operation\\": "src/"
+        }
+    }
+}
