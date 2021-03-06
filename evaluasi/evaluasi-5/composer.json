@@ -1,0 +1,13 @@
+{
+    "name": "safuh/evaluasi",
+    "description": "login with guzzle",
+    "authors": [
+        {
+            "name": "shafhan",
+            "email": "shafhan.fa@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    }
+}
