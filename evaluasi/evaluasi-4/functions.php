@@ -3,8 +3,8 @@ class Data
 {
     private $host = 'localhost',
             $db_name = 'evaluasi_4',
-            $user = 'safuh',
-            $pass = 'mahouka602',
+            $user = 'root',
+            $pass = 'dbpass',
             $connection;
 
     public function __construct()
